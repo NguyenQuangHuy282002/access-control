@@ -1,0 +1,23 @@
+@import '../../../../styles/variables';
+.login {
+  &__avatar {
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.75rem;
+  }
+  &__link-register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: $c-link;
+    &:hover {
+      color: $c-link-hover;
+      text-decoration: underline;
+    }
+  }
+}

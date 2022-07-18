@@ -1,0 +1,55 @@
+@import './variables';
+
+@for $space from 0 through 100 {
+  .fontsz-#{$space} {
+    font-size: #{$space}px !important;
+  }
+}
+
+$sides: (top, bottom, left, right);
+@for $space from 0 through 100 {
+  @each $side in $sides {
+    .m-#{$space} {
+      margin: #{$space}px !important;
+    }
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    .mlr-#{$space} {
+      margin: 0px #{$space} !important;
+    }
+    .mtb-#{$space} {
+      margin: #{$space}px 0px !important;
+    }
+    .p-#{$space} {
+      padding: #{$space}px !important;
+    }
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+    .plr-#{$space} {
+      padding: 0px #{$space}px !important;
+    }
+    .ptb-#{$space} {
+      padding: #{$space}px 0px !important;
+    }
+  }
+}
+
+$dimentions: (width, height);
+@for $space from 0 through 100 {
+  @each $dimention in $dimentions {
+    .#{str-slice($dimention, 0, 1)}-#{$space} {
+      height: #{$space * 5}px !important;
+    }
+    .d#{str-slice($dimention, 0, 1)}-#{$space} {
+      height: #{$space}#{'%'} !important;
+    }
+    .df-#{str-slice($dimention, 0, 1)}-#{$space} {
+      height: #{$space}vh !important;
+    }
+    .min-#{str-slice($dimention, 0, 1)}-#{$space} {
+      min-height: #{$space * 5}px !important;
+    }
+  }
+}

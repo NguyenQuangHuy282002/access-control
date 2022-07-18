@@ -1,0 +1,57 @@
+@import './variables';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $c-text;
+  background-color: $c-background;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(167, 161, 161);
+  border-radius: 5px;
+}
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: rgb(167, 161, 161);
+  border-radius: 5px;
+}
+div::-webkit-scrollbar {
+  width: 5px;
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background: rgb(167, 161, 161);
+  border-radius: 5px;
+}
+tbody::-webkit-scrollbar {
+  width: 5px;
+}
+
+thead::-webkit-scrollbar-thumb {
+  background: rgb(167, 161, 161);
+  border-radius: 5px;
+}
+thead::-webkit-scrollbar {
+  width: 5px;
+}
+
+.pointer {
+  cursor: pointer;
+  &:hover {
+    color: #cfd8dc;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  color: $c-link;
+  &:hover {
+    color: $c-link-hover;
+  }
+}
